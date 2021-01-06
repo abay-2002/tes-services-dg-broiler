@@ -1,0 +1,96 @@
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin:20px auto;
+}
+
+aside a {
+	text-decoration: none;
+}
+
+aside h2 {
+	text-align: center;
+	margin: 20px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+aside .row {
+	display: flex;
+	flex-direction: row;
+	margin:10px auto;
+	padding: 18px;
+	background-color: rgba(240, 240, 240);
+	box-sizing: border-box;
+	border-radius: 10px;
+	justify-content: center;
+}
+
+aside .row .service {
+	border-radius: 10px;
+	width: 150px;
+	margin:5px;
+	background-color: rgba(255,255,255,.9);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition: .3s;
+}
+
+aside .row .service h3 {
+	font-size: 24px;
+	color: #303030;
+	font-weight: bold;
+	text-align: center;
+	margin: 11px;
+}
+
+aside .row .service p {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #303030;
+	margin: 11px;
+	margin-top: 0px;
+}
+
+aside .row .service:hover {
+	margin-top:-1px;
+	background-color: rgba(255,255,255,1);
+}
+
+aside .row a {
+	text-decoration: none;
+}
+
+aside/*column*/ .row .service .img {
+	background-image: url(img/tes.jpg);
+	width: 100px;
+	height: 100px;
+	margin: 15px auto;
+	border-radius: 10px;
+} 
+
+aside .row .service .pesan {
+	background-color: rgb(3, 252, 74);
+	text-align: center;
+	padding: 2px;	
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	transform: translateY(25px);
+	transition: transform .3s;
+}
+
+aside .row .service .pesan span {
+	color: rgba(0,0,0,.9);
+}
+
+aside .row .service:hover .pesan {
+	background-color: rgb(3, 252, 74);
+	text-align: center;
+	padding: 2px;	
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	transform: translateY(-0px);
+}
